@@ -1,8 +1,4 @@
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyrogram)
-![PyPI - License](https://img.shields.io/pypi/l/pyrogram)
-![PyPI - Downloads](https://img.shields.io/pypi/dm/pyrogram)
-![GitHub last commit](https://img.shields.io/github/last-commit/nhman-python/block-channel-at-chat)
-
 # block channel at chat
 
 Telegram bot to block channels that post in groups.
