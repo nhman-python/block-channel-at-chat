@@ -1,26 +1,30 @@
-# block-channel-at-chat
-telegram bot that will block channel that write in group
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pyrogram)
+![PyPI - License](https://img.shields.io/pypi/l/pyrogram)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/pyrogram)
+![GitHub last commit](https://img.shields.io/github/last-commit/nhman-python/block-channel-at-chat)
+
+# block channel at chat
+
+Telegram bot to block channels that post in groups.
 
 ## Installation
 
-``
+```bash
 pip install -r requirements.txt
-``
+```
 
-## TODO
-visit the telegram wed page to get your api key
-
-https://my.telegran.org/
-
-rename the .env.example file to .env and put your api key and bot token
+### Setup
+1. Obtain your API key by visiting the [Telegram website](https://my.telegran.org/).
+2. Rename the `.env.example` file to `.env` and insert your API key and bot token.
 
 ## Usage
 
-``
+```bash
 python index.py
-``
+```
 
-enjoy!
+Enjoy!
 
 ## License
-[Apache](https://github.com/nhman-python/block-channel-at-chat/blob/main/LICENSE)
+
+[Apache License](https://github.com/nhman-python/block-channel-at-chat/blob/main/LICENSE)
