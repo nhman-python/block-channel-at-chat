@@ -19,7 +19,7 @@ bot = Client("block-channel", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TO
 
 @bot.on_message(filters.command(["start", "help"]) & filters.private)
 async def welcome_private(_, message: Message):
-    await message.reply("חוסם כתיבה כערוצים/קבוצות בצאט 🤖!")
+    await message.reply("חוסם כתיבה כערוצים/קבוצות בצאט 🤖!", reply_markup=callback_menu.request_join_button(bot.me.username))
 
 
 @bot.on_message(filters.command(["start", "help"]) & filters.group)
@@ -36,7 +36,7 @@ async def welcome_group(_, message: Message):
             pass
         return
     await message.reply(
-        "חוסם כתיבה כערוצים\קבוצות בצאט 🤖! \nנא לוודא שיש לי אפשרות מחיקה והסרת משתמשים לפעילות תקינה של הבוט")
+        "היי אני חוסם כתיבה כערוצים\קבוצות בצאט 🤖! \nנא לוודא שיש לי אפשרות מחיקה והסרת משתמשים לפעילות תקינה של הבוט")
 
 
 @bot.on_callback_query(filters=filters.regex("^link:"))
