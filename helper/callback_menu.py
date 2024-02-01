@@ -30,3 +30,14 @@ def admin_button_request(username: str):
             ]
         ]
     )
+
+
+def request_join_button(username: str):
+    return InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton(text="הוסף אותי לקבוצה",
+                                     url=f"https://t.me/{username}?startgroup=start&admin=delete_messages+restrict_members")
+            ]
+        ]
+    )
